@@ -1,12 +1,17 @@
-Finding Updated Records
+# Finding Updated Records
 
-Q
+---
+
+### Question
+
 We have a table with employees and their salaries, however, some of the records are old and contain outdated salary information. Find the current salary of each employee assuming that salaries increase each year. Output their id, first name, last name, department ID, and current salary. Order your list by employee ID in ascending order.
 ![image](https://user-images.githubusercontent.com/50389985/227092381-16b53196-9963-4a2d-b001-cf6e3bdcf490.png)
 
-a
-select id, first_name, last_name, department_id,max(salary)
-from ms_employee_salary
-group by id
-order by id asc;
+### Answer
+
+>select id, first_name, last_name, department_id,max(salary)
+>from ms_employee_salary
+>group by id
+>order by id asc;
+
 ![image](https://user-images.githubusercontent.com/50389985/227092419-b97d9170-566a-441a-b49b-b67bc5976a72.png)
